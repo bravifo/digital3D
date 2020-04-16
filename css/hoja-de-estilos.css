@@ -1,4 +1,111 @@
+body{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /* background-color: blue; color de fondo de la pagina */
+   /*background-image: url('../imagenes/fondo_imagen_textura_1.jpg'); para imagenes de fonto de pantalla*/
+}
+
 .borde{
-    border: 1px solid blue;
+    border: 1px solid black;
     padding: 15px;
+}
+
+#cabecera{
+    text-align: center;
+}
+#menu{
+    text-align: center;
+}
+#menu a{
+    display: inline-block;
+    background-color: dimgray;
+    color: black;
+    padding: 1px 20px 1px 20px; /*para los bordes va a las manezillas del reloj*/
+    text-decoration: none;
+    line-height: normal;
+    width: 15%;
+    border-radius: 5px;
+
+}
+#menu a:hover{   /* para modificar las animaciones de los botones*/
+    color: bisque;
+    background-color: darkgray;
+
+}
+#menu a:active{ /*cambiar color al hacer click al boton*/
+    color: black;
+
+}
+#menu  .menu_activo{
+    background-color: orange;
+}
+#sec_quien_soy{
+    display: flex;
+    
+   
+}
+#sec_quien_soy #soy_dg{
+    margin-bottom: 1px;
+}
+#sec_quien_soy #small_soy_dg{
+    font-size: 10px;
+}
+#sec_quien_soy #art_soy p{
+    text-align: justify;
+}
+#sec_quien_soy #art_soy hr{
+    background-color: black;
+  width: 30%;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(1deg);
+  margin-left: 0;
+
+}
+#sec_que_dedico hr{
+    background-color: white;
+    width: 30%;
+    height: 3px;
+    border-radius: 50%;
+    transform: rotate(1deg);
+    margin-left: 0;
+}
+
+#sec_como_ayudarte{
+    text-align: center;
+   
+}
+#sec_como_ayudarte #sec_servicios{
+    display: flex;
+    justify-content: space-between;
+
+}
+#sec_como_ayudarte #sec_servicios .art_tz{
+margin-left: 15px;
+
+}
+#sec_como_ayudarte #sec_servicios article{
+    background-color: #ffb220;
+    color:white;
+    border: 2px solid blue;
+
+}
+#sec_como_ayudarte #sec_servicios article p{
+    text-align: justify;
+}
+#sec_herramientas{
+    color: white;
+    text-align: center;
+    background-color: thistle;
+}
+#sec_herramientas table tbody img{
+    width: 40%;
+
+
+}
+#pie_de_pag{
+    text-align: center;
 }
