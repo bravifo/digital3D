@@ -18,9 +18,11 @@ body{
 }
 #menu{
     text-align: center;
+    display: flex;
+    flex-direction:row; /*acomodar el menu a los lados o en fila*/
 }
 #menu a{
-    display: inline-block;
+   /* display: inline-block;*/
     background-color: dimgray;
     color: black;
     padding: 1px 20px 1px 20px; /*para los bordes va a las manezillas del reloj*/
@@ -28,6 +30,8 @@ body{
     line-height: normal;
     width: 15%;
     border-radius: 5px;
+    margin: 8px;
+    padding: 5px;
 
 }
 #menu a:hover{   /* para modificar las animaciones de los botones*/

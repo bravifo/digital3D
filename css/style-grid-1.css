@@ -1,0 +1,43 @@
+body{
+    padding: 20px; /*margen para las pag*/
+background-color: rgb(218, 222, 228);
+}
+
+#page{
+    display: grid;
+    height: 550px;
+    grid-template-areas: "header header" 
+                         "nav cuerpo"
+                         "nav pie";
+    column-gap: 10px;
+    row-gap: 20px;                      
+  grid-template-rows: 200px 1fr 100px;
+    grid-template-columns: 200px 1fr;
+
+}
+header{
+    background-color: maroon;
+    grid-area: header;
+}
+nav{
+    background-color: mediumaquamarine;
+    grid-area: nav;
+}
+main {
+    background-color: olivedrab;
+    grid-area: cuerpo;
+}
+footer{
+    background-color: orange;
+    grid-area: pie;
+}
+@media only screen and (max-width:700px) /*para que al momento de redicir la pantalla el pie de pag ocupe todo*/{
+    #page{
+        grid-template-areas: "header header" 
+                         "nav cuerpo"
+                         "pie pie";
+    }
+}
+@media only screen and (max-width:500px){
+    
+}
